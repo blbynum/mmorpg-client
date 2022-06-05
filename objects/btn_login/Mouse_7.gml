@@ -1,0 +1,1 @@
+show_message("Username: " + txt_Username.text + " Password: " + txt_Password.text);
