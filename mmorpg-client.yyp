@@ -4,6 +4,7 @@
     {"id":{"name":"btn_Login","path":"objects/btn_Login/btn_Login.yy",},"order":2,},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":0,},
     {"id":{"name":"ui_textbox_base","path":"objects/ui_textbox_base/ui_textbox_base.yy",},"order":2,},
+    {"id":{"name":"network_write","path":"scripts/network_write/network_write.yy",},"order":1,},
     {"id":{"name":"ui_base","path":"objects/ui_base/ui_base.yy",},"order":0,},
     {"id":{"name":"bg_Connecting","path":"sprites/bg_Connecting/bg_Connecting.yy",},"order":0,},
     {"id":{"name":"ui_focus_base","path":"objects/ui_focus_base/ui_focus_base.yy",},"order":1,},
@@ -22,7 +23,7 @@
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "isEcma": false,
   "configs": {
     "name": "Default",
