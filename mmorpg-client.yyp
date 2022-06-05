@@ -15,6 +15,7 @@
     {"id":{"name":"bg_Connecting","path":"sprites/bg_Connecting/bg_Connecting.yy",},"order":0,},
     {"id":{"name":"ui_focus_base","path":"objects/ui_focus_base/ui_focus_base.yy",},"order":1,},
     {"id":{"name":"txt_Password","path":"objects/txt_Password/txt_Password.yy",},"order":1,},
+    {"id":{"name":"obj_Network_Player","path":"objects/obj_Network_Player/obj_Network_Player.yy",},"order":1,},
     {"id":{"name":"spr_Hero_Down","path":"sprites/spr_Hero_Down/spr_Hero_Down.yy",},"order":2,},
     {"id":{"name":"txt_Username","path":"objects/txt_Username/txt_Username.yy",},"order":0,},
     {"id":{"name":"bg_Title_Screen","path":"sprites/bg_Title_Screen/bg_Title_Screen.yy",},"order":2,},

@@ -42,5 +42,33 @@ function handle_packet(data_buffer){
 			}
 			break;
 			
+		case "POS":
+			username = buffer_read(data_buffer, buffer_string);
+			target_x = buffer_read(data_buffer, buffer_u16);
+			target_y = buffer_read(data_buffer, buffer_u16);
+			
+			foundPlayer = -1;
+			with(obj_Network_Player) {
+				if(name == other.username) {
+					other.foundPlayer = id;
+					break;
+				}
+			}
+			
+			if (foundPlayer != -1) {
+				with(foundPlayer) {
+					target_x = other.target_x;	
+					target_y  = other.target_y;	
+				}
+			} else {
+				layer_create(-100, "Network_Players");
+				instance_create_layer(target_x, target_y, "Network_Players", obj_Network_Player, {
+					name: other.username
+				});
+			}
+			
+			
+			break
+			
 	}
 }
