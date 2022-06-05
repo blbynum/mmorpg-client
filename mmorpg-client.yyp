@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"rm_login","path":"rooms/rm_login/rm_login.yy",},"order":1,},
     {"id":{"name":"btn_Login","path":"objects/btn_Login/btn_Login.yy",},"order":2,},
+    {"id":{"name":"rm_map_home","path":"rooms/rm_map_home/rm_map_home.yy",},"order":0,},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":0,},
     {"id":{"name":"ui_textbox_base","path":"objects/ui_textbox_base/ui_textbox_base.yy",},"order":2,},
     {"id":{"name":"network_write","path":"scripts/network_write/network_write.yy",},"order":1,},
@@ -16,6 +17,7 @@
     {"id":{"name":"btn_Register","path":"objects/btn_Register/btn_Register.yy",},"order":3,},
     {"id":{"name":"bg_Loading","path":"sprites/bg_Loading/bg_Loading.yy",},"order":1,},
     {"id":{"name":"handle_packet","path":"scripts/handle_packet/handle_packet.yy",},"order":0,},
+    {"id":{"name":"rm_map_test","path":"rooms/rm_map_test/rm_map_test.yy",},"order":1,},
     {"id":{"name":"Network","path":"objects/Network/Network.yy",},"order":0,},
   ],
   "Options": [
@@ -32,6 +34,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_login","path":"rooms/rm_login/rm_login.yy",},},
+    {"roomId":{"name":"rm_map_home","path":"rooms/rm_map_home/rm_map_home.yy",},},
+    {"roomId":{"name":"rm_map_test","path":"rooms/rm_map_test/rm_map_test.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -54,6 +58,7 @@
     {"folderPath":"folders/Sprites/UI Framework.yy","order":1,"resourceVersion":"1.0","name":"UI Framework","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Room Specific.yy","order":3,"resourceVersion":"1.0","name":"Room Specific","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Room Specific/Login.yy","order":1,"resourceVersion":"1.0","name":"Login","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/Maps.yy","order":2,"resourceVersion":"1.0","name":"Maps","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
