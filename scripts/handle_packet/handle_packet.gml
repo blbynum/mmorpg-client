@@ -23,6 +23,10 @@ function handle_packet(data_buffer){
 				room_goto(goto_room);
 				
 				// TODO: Initiate a player object on this room
+				layer_create(-100, "Players");
+				instance_create_layer(target_x, target_y, "Players", obj_Player, {
+					name: other.name
+				});
 				
 			} else {
 				show_message("Login Failed.");	
