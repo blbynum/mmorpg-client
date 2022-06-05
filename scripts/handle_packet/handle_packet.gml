@@ -22,11 +22,11 @@ function handle_packet(data_buffer){
 				goto_room = asset_get_index(target_room);
 				room_goto(goto_room);
 				
-				// TODO: Initiate a player object on this room
+				// Initiate a player object on this room
 				layer_create(-100, "Players");
-				instance_create_layer(target_x, target_y, "Players", obj_Player, {
-					name: other.name
-				});
+				with(instance_create_layer(target_x, target_y, "Players", obj_Player)) {
+					name = other.name;
+				};
 				
 			} else {
 				show_message("Login Failed.");	
@@ -61,10 +61,14 @@ function handle_packet(data_buffer){
 					target_y  = other.target_y;	
 				}
 			} else {
+				//layer_create(-99, "Network_Players");
+				//instance_create_layer(target_x, target_y, "Network_Players", obj_Network_Player, {
+				//	name: other.username
+				//});
 				layer_create(-100, "Network_Players");
-				instance_create_layer(target_x, target_y, "Network_Players", obj_Network_Player, {
-					name: other.username
-				});
+				with(instance_create_layer(target_x, target_y, "Network_Players", obj_Network_Player)) {
+					name = other.username;
+				};
 			}
 			
 			
