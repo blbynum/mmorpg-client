@@ -4,7 +4,7 @@
     "path": "sprites/spr_Blocked/spr_Blocked.yy",
   },
   "solid": true,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

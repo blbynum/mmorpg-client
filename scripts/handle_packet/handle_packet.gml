@@ -72,7 +72,21 @@ function handle_packet(data_buffer){
 			}
 			
 			
-			break
+			break;
+		case "EXIT":
+			username = buffer_read(data_buffer, buffer_string);
+			
+			foundPlayer = -1;
+			with(obj_Network_Player) {
+				if(name == other.username) {
+					other.foundPlayer = id;
+					break;
+				}
+			}
+			
+			if (foundPlayer != -1) {
+				instance_destroy(foundPlayer);
+			}
 			
 	}
 }
