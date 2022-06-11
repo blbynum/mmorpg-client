@@ -65,7 +65,7 @@ function handle_packet(data_buffer){
 				//instance_create_layer(target_x, target_y, "Network_Players", obj_Network_Player, {
 				//	name: other.username
 				//});
-				layer_create(-100, "Network_Players");
+				layer_create(-105, "Network_Players");
 				with(instance_create_layer(target_x, target_y, "Network_Players", obj_Network_Player)) {
 					name = other.username;
 				};

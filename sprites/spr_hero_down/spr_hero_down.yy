@@ -56,7 +56,7 @@
     "spriteId": {"name":"spr_Hero_Down","path":"sprites/spr_Hero_Down/spr_Hero_Down.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 24.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
