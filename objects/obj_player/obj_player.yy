@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_Hero_Right",
-    "path": "sprites/spr_Hero_Right/spr_Hero_Right.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -8,3 +8,4 @@ if (new_hp >= 0) {
 }
 
 // TODO: play sound
+audio_play_sound(snd_Lava_Hiss, 1, 0);

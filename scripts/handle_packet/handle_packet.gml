@@ -28,6 +28,8 @@ function handle_packet(data_buffer){
 					name = other.name;
 				};
 				
+				audio_stop_sound(snd_Login_Music);
+				
 			} else {
 				show_message("Login Failed.");	
 			}

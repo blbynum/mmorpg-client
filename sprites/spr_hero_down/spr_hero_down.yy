@@ -125,8 +125,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Players",
-    "path": "folders/Sprites/Players.yy",
+    "name": "Hero",
+    "path": "folders/Sprites/Players/Hero.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_Hero_Down",

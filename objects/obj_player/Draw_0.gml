@@ -20,6 +20,31 @@ if (moving) {
 }
 
 
+with (obj_Leather_Armor_Torso) {
+	
+	
+	switch(dir) {
+	case "LEFT":
+		sprite_index = spr_Leather_Armor_Torso_Left;
+		break;
+	case "RIGHT":
+		sprite_index = spr_Leather_Armor_Torso_Right;
+		break;
+	case "UP":
+		sprite_index = spr_Leather_Armor_Torso_Up
+		break;
+	case "DOWN":
+		sprite_index = spr_Leather_Armor_Torso_Down;
+		break;
+	}
+
+	if (moving) {
+		draw_sprite(sprite_index, image_index, x, y);
+	} else {
+		draw_sprite(sprite_index, 0, x, y);
+	}
+}
+
 // Get text coords
 //var text_name = name;
 //var text_x = (x + (sprite_width / 2)) - (string_width(name) / 2);   // center text
