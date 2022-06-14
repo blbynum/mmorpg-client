@@ -49,3 +49,15 @@ if (stop_count > 0) {
 	}
 }
 
+with(armor) {
+	if (owner = other) {
+		target_x = other.target_x;
+		target_y = other.target_y;
+		moving = other.moving;
+		dir = other.dir;
+		x = other.x;
+		y = other.y;
+		image_speed = other.image_speed;
+	}
+}
+

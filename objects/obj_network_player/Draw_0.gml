@@ -19,8 +19,31 @@ if (moving) {
 	draw_sprite(sprite_index, 0, x, y);
 }
 
+// draw armor
+with (obj_Leather_Armor_Torso) {
+	
+	
+	switch(dir) {
+	case "LEFT":
+		sprite_index = spr_Leather_Armor_Torso_Left;
+		break;
+	case "RIGHT":
+		sprite_index = spr_Leather_Armor_Torso_Right;
+		break;
+	case "UP":
+		sprite_index = spr_Leather_Armor_Torso_Up
+		break;
+	case "DOWN":
+		sprite_index = spr_Leather_Armor_Torso_Down;
+		break;
+	}
 
-
+	if (moving) {
+		draw_sprite(sprite_index, image_index, x, y);
+	} else {
+		draw_sprite(sprite_index, 0, x, y);
+	}
+}
 
 
 // Get text coords
