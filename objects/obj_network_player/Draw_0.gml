@@ -1,4 +1,27 @@
-draw_self();
+switch(dir) {
+	case "LEFT":
+		sprite_index = spr_Hero_Left;
+		break;
+	case "RIGHT":
+		sprite_index = spr_Hero_Right;
+		break;
+	case "UP":
+		sprite_index = spr_Hero_Up;
+		break;
+	case "DOWN":
+		sprite_index = spr_Hero_Down;
+		break;
+}
+
+if (moving) {
+	draw_sprite(sprite_index, image_index, x, y);
+} else {
+	draw_sprite(sprite_index, 0, x, y);
+}
+
+
+
+
 
 // Get text coords
 var text_name = name;
