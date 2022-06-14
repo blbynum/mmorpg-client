@@ -1,3 +1,8 @@
+if (hp_last > hp) {
+	regen_cooldown_counter = regen_cooldown;
+	show_debug_message("Ayooo");
+}
+
 if ( target_x > x ) { x += 4 }
 if ( target_x < x ) { x -= 4 }
 if ( target_y > y ) { y += 4 }

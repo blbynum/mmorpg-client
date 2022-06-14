@@ -1,5 +1,5 @@
-gui_x = display_mouse_get_x();
-gui_y = display_mouse_get_y();
+gui_x = 0;
+gui_y = 0;
 
 capped = false;
 

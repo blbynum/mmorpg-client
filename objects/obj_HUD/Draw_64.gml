@@ -1,6 +1,6 @@
 draw_set_color(c_white);
-gui_x = display_mouse_get_x();
-gui_y = display_mouse_get_y();
+gui_x = 0;
+gui_y = 0;
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
 margin_l = 5;
@@ -29,14 +29,14 @@ hp_t = tl_y + string_height(tl_text);
 hp_r = hp_l + (gui_width / 5);
 hp_b = hp_t + 8;
 hp_perc = p_hp / p_hp_max * 100;
-draw_healthbar(hp_l, hp_t, hp_r, hp_b, p_hp, c_black, c_red, c_lime, 0, true, true);
+draw_healthbar(hp_l, hp_t, hp_r, hp_b, hp_perc, c_black, c_red, c_lime, 0, true, true);
 
 mana_l = hp_l;
 mana_t = hp_b + 4;
 mana_r = mana_l + (gui_width / 5);
 mana_b = mana_t + 8;
 mana_perc = p_mana / p_mana_max * 100;
-draw_healthbar(mana_l, mana_t, mana_r, mana_b, p_mana, c_black, c_aqua, c_blue, 0, true, true);
+draw_healthbar(mana_l, mana_t, mana_r, mana_b, mana_perc, c_black, c_aqua, c_blue, 0, true, true);
 
 energy_l = mana_l;
 energy_t = mana_b + 4;
